@@ -1,0 +1,39 @@
+<body>
+    <h1>Calculadora</h1>
+    <div>
+        <ul>
+
+            <input type="number" [(ngModel)]="num1">
+            <input type="number" [(ngModel)]="num2">
+            <!-- Suma -->
+            <li>Sumar</li>
+            <button (click)="sumar()">Sumar</button>
+            {{ sumando }}
+
+            <!-- Resta -->
+            <li>Restar</li>
+            <button (click)="restar()">Restar</button>
+            {{ restando }}
+
+            <!-- Multiplicación -->
+            <li>Multiplicar</li>
+            <button (click)="multiplicar()">Multiplicar</button>
+            {{ multiplicando }}
+
+            <!-- División -->
+            <li>Dividir</li>
+            <button (click)="dividir()">Dividir</button>
+            {{ divisor }}
+
+            <!-- Cambio de divisas -->
+            <li>Cambio de divisas</li>
+            <input type="number" [(ngModel)]="cantidadDivisa">
+            <button (click)="euros()">Euros</button>
+            {{ valorEuros }}
+            <button (click)="libras()">Libras</button>
+            {{ valorLibras }}
+            <button (click)="dolares()">Dolares</button>
+            {{ valorDolares }}
+        </ul>
+    </div>
+</body>
